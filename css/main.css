@@ -1,0 +1,432 @@
+@charset "UTF-8";
+/* line 1, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 12, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_reset.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 16, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_reset.scss */
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 1280px) {
+  /* line 16, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_reset.scss */
+  html {
+    font-size: 55%;
+  }
+}
+
+/* line 1, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_grid.scss */
+.container {
+  width: 100%;
+  max-width: 124.6rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+/* line 1, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_header.scss */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 11.9rem;
+  background-color: #5F3CA1;
+  display: flex;
+  z-index: 2021;
+}
+
+/* line 10, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_header.scss */
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 14, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_header.scss */
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+/* line 18, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_header.scss */
+header nav ul li:not(:first-child) {
+  margin-left: 5.6rem;
+}
+
+/* line 21, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_header.scss */
+header nav ul li a {
+  display: flex;
+  align-items: center;
+}
+
+/* line 24, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_header.scss */
+header nav ul li a span {
+  font-size: 1.6rem;
+  margin-left: 1.6rem;
+  line-height: 1.9rem;
+  color: #FCFCFC;
+}
+
+@media (max-width: 600px) {
+  /* line 35, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_header.scss */
+  header .container {
+    justify-content: center;
+  }
+  /* line 38, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_header.scss */
+  header nav {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /* line 1, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_header.scss */
+  header {
+    height: 8rem;
+  }
+  /* line 44, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_header.scss */
+  header .logo {
+    max-width: 140px;
+  }
+}
+
+/* line 1, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-hero {
+  background-color: #5F3CA1;
+  margin-top: 11.9rem;
+  padding-top: 3.9rem;
+}
+
+/* line 5, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-hero .container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* line 8, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-hero .text {
+  width: 100%;
+  max-width: 55rem;
+}
+
+/* line 11, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-hero .text h1 {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-bottom: 1.6rem;
+}
+
+/* line 19, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-hero .text p {
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #FFFFFF;
+  max-width: 48.8rem;
+  margin-bottom: 3.2rem;
+}
+
+/* line 26, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-hero .text button {
+  display: inline-block;
+  height: 5.4rem;
+  line-height: 5.4rem;
+  background-color: #FFBF00;
+  border-radius: 6px;
+  padding: 0px 5rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all .3s;
+  margin-bottom: 8.6rem;
+}
+
+/* line 25, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_mixins.scss */
+.s-hero .text button:hover {
+  background-color: #503387;
+  color: #FFBF00;
+}
+
+/* line 30, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-hero .text .conheca {
+  display: flex;
+  align-items: center;
+}
+
+/* line 33, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-hero .text .conheca .icon {
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: rgba(123, 90, 186, 0.4);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 40, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-hero .text .conheca span {
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #FFFFFF;
+  margin-left: 1.6rem;
+}
+
+/* line 49, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-hero .image {
+  position: relative;
+  top: 3.4rem;
+}
+
+@media (max-width: 991px) {
+  /* line 54, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-hero .container {
+    flex-direction: column;
+  }
+  /* line 57, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-hero .text {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+  /* line 60, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-hero .text h1 {
+    text-align: center;
+  }
+  /* line 63, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-hero .text p {
+    max-width: 100%;
+    text-align: center;
+  }
+  /* line 67, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-hero .text button {
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    display: block;
+  }
+  /* line 72, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-hero .text .conheca {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 1, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-hero {
+    padding-top: 2.5rem;
+    margin-top: 8rem;
+  }
+  /* line 81, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-hero .text h1 {
+    font-size: 4.3rem;
+  }
+  /* line 85, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-hero .image {
+    left: -9px;
+  }
+}
+
+/* line 92, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-resources {
+  padding-top: 14.9rem;
+  padding-bottom: 9.9rem;
+}
+
+/* line 95, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-resources .top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5.3rem;
+}
+
+/* line 98, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-resources .top h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 130%;
+  color: #453F51;
+  max-width: 50.2rem;
+}
+
+/* line 106, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-resources .top p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #5E5570;
+}
+
+/* line 113, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-resources .content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* line 115, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-resources .content .icon {
+  width: 6.4rem;
+  height: 6.4rem;
+  background-color: rgba(197, 190, 220, 0.1);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+/* line 123, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-resources .content .info {
+  max-width: 23.9rem;
+}
+
+/* line 125, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-resources .content .info h4 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #5F3CA1;
+  margin-bottom: 2rem;
+}
+
+/* line 132, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-resources .content .info p {
+  font-size: 1.6rem;
+  line-height: 165%;
+  color: #5E5570;
+}
+
+/* line 138, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-resources .content .card-featured {
+  width: 100%;
+  max-width: 28rem;
+  height: 32.3rem;
+  background: rgba(197, 190, 220, 0.1);
+  border-radius: 12px;
+  padding-top: 4.1rem;
+  padding-left: 4.2rem;
+}
+
+/* line 146, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-resources .content .card-featured .icon {
+  background-color: #FFFFFF;
+}
+
+/* line 149, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-resources .content .card-featured .info {
+  max-width: 20.4rem;
+}
+
+/* line 153, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+.s-resources .content ul {
+  width: 100%;
+  max-width: 90.4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 4.1rem;
+  border-bottom: 3px solid rgba(95, 60, 161, 0.1);
+  padding-bottom: 6.5rem;
+  padding-left: 2rem;
+}
+
+@media (max-width: 991px) {
+  /* line 164, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-resources .content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* line 167, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-resources .content .card-featured {
+    max-width: 100%;
+    height: auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* line 172, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-resources .content .card-featured .info {
+    max-width: 100%;
+  }
+  /* line 174, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-resources .content .card-featured .info h4, .s-resources .content .card-featured .info p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 92, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-resources {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  /* line 184, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-resources .top {
+    flex-direction: column;
+  }
+  /* line 186, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-resources .top h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  /* line 192, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-resources .content ul {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* line 92, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-resources {
+    padding-top: 6rem;
+  }
+  /* line 200, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-resources .content ul {
+    flex-direction: column;
+    padding-left: 0px;
+    margin-top: 3rem;
+  }
+  /* line 204, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-resources .content ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* line 206, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-resources .content ul li h4, .s-resources .content ul li p {
+    text-align: center;
+  }
+  /* line 211, ../../../OneDrive/Área de Trabalho/Front/kinghost/scss/_home.scss */
+  .s-resources .content .info {
+    max-width: 95%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
